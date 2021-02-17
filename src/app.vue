@@ -7,7 +7,7 @@
   export default {
     data() {
       return {
-        text: 'lrxu'
+        text: 'hello world'
       }
     }
   }
