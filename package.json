@@ -1,0 +1,10 @@
+{
+  "name": "webpack-vue",
+  "version": "1.0.0",
+  "description": "webpack",
+  "main": "main.js",
+  "repository": "https://github.com/PigPiggo/webpack-vue.git",
+  "author": "rtx",
+  "license": "MIT",
+  "private": false
+}
