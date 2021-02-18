@@ -7,13 +7,14 @@ let port = 8080;
 console.info(chalk.yellow.bold  ('\n端口检测中...'));
 function setPort () {
   const server = net.createServer(); 
-  server.listen (port, 'localhost', () => {
+  server.listen (port, '0.0.0.0', () => {
     server.close(); 
     console.info(chalk.green.bold  ('\n检测完成 — port: ' + port + '\n'));
     process.execSync('yarn d', { 
       env: {
         ...process.env, 
         PORT: port, 
+        HOST:'0.0.0.0'
       }, 
       stdio: 'inherit' 
     });
