@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .text {
-  & >>> p {
+  ::v-deep p {
     background-color: red;
   }
 }
