@@ -1,14 +1,16 @@
 <template>
   <div class="text">
-    123123
+    <aa />
+    <bb />
   </div>
 </template>
 
 <script>
+import aa from './components/aa.vue'
+import bb from './components/bb.vue'
 export default {
+  components: {
+    aa, bb
+  }
 }
 </script>
-
-<style lang="scss" scoped>
-@import './style/aa.scss'; 
-</style>
