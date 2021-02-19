@@ -1,6 +1,7 @@
 <template>
   <div class="aa">
     <el-button>aa</el-button>
+    <p>123123123</p>
   </div>
 </template>
 
@@ -13,6 +14,6 @@ export default {
 } */
 </script>
 
-<style>
+<style lang="scss">
 
 </style>

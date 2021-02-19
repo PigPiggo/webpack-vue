@@ -14,3 +14,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.text {
+  & >>> p {
+    background-color: red;
+  }
+}
+</style>

@@ -5,8 +5,9 @@
   "author": "rtx",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack serve --node-env development --config build/webpack.config.babel.js",
-    "build": "webpack --node-env production --config build/webpack.config.babel.js",
+    "dev": "node build/initDevServer",
+    "d": "webpack serve --node-env development --config build/webpack.config.babel.js",
+    "build": "webpack --node-env production --config build/webpack.config.babel.js --progress",
     "analyze": "webpack --node-env production --config build/webpack.config.babel.js --analyze"
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "autoprefixer": "^10.2.4",
     "babel-loader": "^8.2.2",
     "babel-plugin-component": "^1.1.1",
+    "chalk": "^4.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.2",
     "file-loader": "^6.2.0",
